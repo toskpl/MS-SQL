@@ -1,0 +1,5 @@
+Na podstawie www.kursysql.pl
+
+"Kurs SQL w 120 minut"
+
+Silnik bazy danych MS SQL 2019.
