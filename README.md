@@ -1,4 +1,4 @@
-"# MS-SQL" 
+"#MS-SQL" 
 
 Simple sql 
 
