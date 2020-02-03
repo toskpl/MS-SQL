@@ -16,3 +16,5 @@ Katalog: database
 Moduł 1: Pierwsze zapytania.
 
 Moduł 2: Funkcje.
+
+Moduł 3: Grupowanie.
