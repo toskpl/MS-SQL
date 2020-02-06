@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 18.00
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "LaczenieTabel", "LaczenieTabel\LaczenieTabel.ssmssqlproj", "{135B1759-CA4B-48E0-A942-5E4E84B7181E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{135B1759-CA4B-48E0-A942-5E4E84B7181E}.Default|Default.ActiveCfg = Default
+		{29447FCB-6CCB-4E2D-BA0B-996F11EF1DC9}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5263AAA-EC26-4FB6-B192-46DE47872E5E}
+	EndGlobalSection
+EndGlobal
