@@ -18,3 +18,5 @@ Moduł 1: Pierwsze zapytania.
 Moduł 2: Funkcje.
 
 Moduł 3: Grupowanie.
+
+Moduł 4: Łączenie tabel.
