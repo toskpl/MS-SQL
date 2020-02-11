@@ -13,10 +13,12 @@ Katalog: database
 
 ---------------------------------------------------------------------------------------------------------
 
-Moduł 1: Pierwsze zapytania.
+- Moduł 1: Pierwsze zapytania.
 
-Moduł 2: Funkcje.
+- Moduł 2: Funkcje.
 
-Moduł 3: Grupowanie.
+- Moduł 3: Grupowanie.
 
-Moduł 4: Łączenie tabel.
+- Moduł 4: Łączenie tabel.
+
+- Moduł 5: Tworzenie tabel
