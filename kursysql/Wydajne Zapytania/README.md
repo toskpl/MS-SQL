@@ -22,3 +22,5 @@ Katalog: database
 - Moduł 4: Łączenie tabel.
 
 - Moduł 5: Tworzenie tabel
+
+- Moduł 6: Tworzenie ograniczeń
