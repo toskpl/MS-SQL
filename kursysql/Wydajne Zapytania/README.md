@@ -7,7 +7,7 @@ Silnik bazy danych MS SQL 2019.
 |Database  | Source |
 | ------------- |:-------------:|
 AdventureWorks2017 |**[link](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2017.bak)**|
-Filmy | **[link](https://github.com/toskpl/MS-SQL/tree/master/kursysql/Wydajne%20Zapytania/database)**|
+Filmy | **[link](https://github.com/toskpl/MS-SQL/tree/master/kursysql/Wydajne%20Zapytania/database/FilmyDB.bak)**|
 
 
 ---------------------------------------------------------------------------------------------------------
