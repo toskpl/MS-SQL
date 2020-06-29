@@ -9,3 +9,5 @@
 - Administracja - TODO
 
 - Optymalizacja - TODO
+
+- **[SSIS](https://github.com/toskpl/MS-SQL/tree/master/kursysql/Wydajne%20Zapytania)** IN PROGRESS
