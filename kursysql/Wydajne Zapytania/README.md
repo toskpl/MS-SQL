@@ -1,6 +1,6 @@
 "Wydajne zapytania" na podstawie:
 - www.kursysql.pl
-- www.kursysql.pl/wydajne-zapytania-sql/)
+- www.kursysql.pl/wydajne-zapytania-sql/
 
 Silnik bazy danych MS SQL 2019.
 
