@@ -16,3 +16,15 @@ SSIS_Lab
  Zapisano jako pakiet *dstx
 
  Zaimportowano pakiet (lab02c_wizard.dtsx) w SSIS.
+ 
+ ---------------------------------------------------------------------------------------------------------
+ 
+Stworzono nowy pakiet  (lab02d_introduction.dtsx).
+
+Stworzono połaczenie na projekcie (AW.conmgr).
+
+Stworzono prosty przepływ danych z tabeli:
+
+Sales.SalesOrderHeader połaczono z Person.Person do nowo utworzonej tabeli Orders.
+
+
