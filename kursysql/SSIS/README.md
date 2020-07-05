@@ -17,7 +17,7 @@ SSIS_Lab
 
  Zaimportowano pakiet (lab02c_wizard.dtsx) w SSIS.
  
- ---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
  
 Stworzono nowy pakiet  (lab02d_introduction.dtsx).
 
@@ -27,4 +27,5 @@ Stworzono prosty przepływ danych z tabeli:
 
 Sales.SalesOrderHeader połaczono z Person.Person do nowo utworzonej tabeli Orders.
 
+**[SSIS review](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab02d_introduction.png)**
 
