@@ -29,3 +29,13 @@ Sales.SalesOrderHeader połaczono z Person.Person do nowo utworzonej tabeli Orde
 
 **[SSIS review](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab02d_introduction.png)**
 
+---------------------------------------------------------------------------------------------------------
+ 
+Stworzono nowy pakiet  (lab03b_profiler.dtsx).
+
+Stworzono połaczenie na poziomie pakietu (localhost.AdventureWorks20171) + połaczenie do pliku XML z danymi profilera (profiler_results.xml)
+
+Stworzono prosty profiler:
+
+**[SSIS review profiler](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab03b_profiler.png)**
+
