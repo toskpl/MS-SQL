@@ -13,8 +13,8 @@
   DTS:MaxErrorCount="0"
   DTS:ObjectName="lab02c_wizard"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{D9D7262B-F1F1-48B2-AFFF-1685567F4A05}">
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{82F0A11F-2718-4610-8D2A-DA7F06DDB5C2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>

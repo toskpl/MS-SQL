@@ -2,18 +2,23 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>SSIS_Lab</Name>
-    <LastWriteTime>2020-07-05T13:05:16.4188122Z</LastWriteTime>
+    <LastWriteTime>2020-07-06T21:47:07.0148978Z</LastWriteTime>
     <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>lab02c_wizard.dtsx</Name>
-      <LastWriteTime>2020-07-01T22:27:31.710867Z</LastWriteTime>
+      <LastWriteTime>2020-07-05T13:59:27.9699265Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>lab02d_introduction.dtsx</Name>
       <LastWriteTime>2020-07-05T13:20:57.0115115Z</LastWriteTime>
+      <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>lab03b_profiler.dtsx</Name>
+      <LastWriteTime>2020-07-06T21:47:06.9903328Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

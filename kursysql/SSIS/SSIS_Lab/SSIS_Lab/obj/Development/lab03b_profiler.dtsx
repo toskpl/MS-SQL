@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/6/2020 11:33:29 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="PPL-POZ-NB0452"
+  DTS:CreatorName="PSI\tskrzypczak"
+  DTS:DTSID="{C314C155-AE4E-4745-81AF-2AD8EAA55DD6}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.121"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="lab03b_profiler"
+  DTS:PackageType="5"
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{1AA592A3-A341-4709-AD5A-005DB68F7F8C}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.AdventureWorks20171]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{7648B2A0-D524-4964-BFE8-012AB4A0A3D9}"
+      DTS:ObjectName="localhost.AdventureWorks20171">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=AdventureWorks2017;Integrated Security=True;Application Name=SSIS-lab03b_profiler-{7648B2A0-D524-4964-BFE8-012AB4A0A3D9}localhost.AdventureWorks20171;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[profiler_results.xml]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{2A84C28F-588C-41C5-9937-A9E871AAFEB3}"
+      DTS:ObjectName="profiler_results.xml">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="C:\_TOSKPL\kursSQL\SSIS\SSIS_Lab\profiler_results.xml" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Profiling Task"
+      DTS:CreationName="Microsoft.DataProfilingTask"
+      DTS:Description="Data Profiling Task"
+      DTS:DTSID="{42EA46EB-E475-4DA3-9FD2-CB49D745E9AC}"
+      DTS:ExecutableType="Microsoft.DataProfilingTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Profiling Task"
+      DTS:TaskContact="Data Profiling Task; Microsoft Corporation; SQL Server 2019; (c) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <DataProfilingTaskData
+          Destination="profiler_results.xml"
+          OverwriteDestination="True">
+          <ProfileInput><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<DataProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
+  <ProfileVersion>1.0</ProfileVersion>
+  <DataSources />
+  <DataProfileInput>
+    <ProfileMode>Exact</ProfileMode>
+    <Timeout>0</Timeout>
+    <Requests>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq">
+        <DataSourceID>{7648B2A0-D524-4964-BFE8-012AB4A0A3D9}</DataSourceID>
+        <Table Schema="Production" Table="Product" />
+        <Column IsWildCard="false" ColumnName="ListPrice" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq1">
+        <DataSourceID>{7648B2A0-D524-4964-BFE8-012AB4A0A3D9}</DataSourceID>
+        <Table Schema="Sales" Table="SalesOrderHeader" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq">
+        <DataSourceID>{7648B2A0-D524-4964-BFE8-012AB4A0A3D9}</DataSourceID>
+        <Table Schema="Person" Table="Address" />
+        <Column IsWildCard="false" ColumnName="AddressLine1" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq">
+        <DataSourceID>{7648B2A0-D524-4964-BFE8-012AB4A0A3D9}</DataSourceID>
+        <Table Schema="Person" Table="Address" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <InclusionProfileRequest ID="InclusionReq">
+        <SubsetDataSourceID>{7648B2A0-D524-4964-BFE8-012AB4A0A3D9}</SubsetDataSourceID>
+        <SubsetTable Schema="Sales" Table="SalesOrderHeader" />
+        <SubsetColumns>
+          <Column IsWildCard="false" ColumnName="SalesOrderID" />
+        </SubsetColumns>
+        <SupersetDataSourceID>{7648B2A0-D524-4964-BFE8-012AB4A0A3D9}</SupersetDataSourceID>
+        <SupersetTable Schema="Purchasing" Table="ShipMethod" />
+        <SupersetColumns>
+          <Column IsWildCard="false" ColumnName="ShipMethodID" />
+        </SupersetColumns>
+        <InclusionThresholdSetting>None</InclusionThresholdSetting>
+        <InclusionStrengthThreshold>0.95</InclusionStrengthThreshold>
+        <SupersetColumnsKeyThresholdSetting>Specified</SupersetColumnsKeyThresholdSetting>
+        <SupersetColumnsKeyThreshold>0.95</SupersetColumnsKeyThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </InclusionProfileRequest>
+    </Requests>
+  </DataProfileInput>
+  <DataProfileOutput>
+    <Profiles />
+  </DataProfileOutput>
+</DataProfile>]]></ProfileInput>
+        </DataProfilingTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Data Profiling Task"
+          TopLeft="283,122" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
