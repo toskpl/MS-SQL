@@ -12,8 +12,8 @@
   DTS:ObjectName="lab03b_profiler"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{1AA592A3-A341-4709-AD5A-005DB68F7F8C}">
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{E089D996-29E3-4CC1-AA9C-8C9B4AF2B5C5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
