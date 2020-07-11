@@ -33,9 +33,17 @@ Sales.SalesOrderHeader połaczono z Person.Person do nowo utworzonej tabeli Orde
  
 Stworzono nowy pakiet  (lab03b_profiler.dtsx).
 
-Stworzono połaczenie na poziomie pakietu (localhost.AdventureWorks20171) + połaczenie do pliku XML z danymi profilera (profiler_results.xml)
+Stworzono połaczenie na poziomie pakietu (localhost.AdventureWorks2017) + połaczenie do pliku XML z danymi profilera (profiler_results.xml)
 
 Stworzono prosty profiler:
 
 **[SSIS review profiler](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab03b_profiler.png)**
 
+---------------------------------------------------------------------------------------------------------
+ 
+Stworzono nowy pakiet  (lab03c_etl.dtsx).
+
+Stworzono przepływ ETL wykorzystano:
+Derived Column,Lookup,Multicast,Split,Flat File Destination,OLE DB Destination
+
+**[SSIS ETL](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab03c_etl.png)**
