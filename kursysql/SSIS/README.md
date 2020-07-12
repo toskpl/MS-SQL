@@ -56,3 +56,13 @@ Stworzono przepływ ETL wykorzystano:
 Derived Column,Lookup,Multicast,Split,Flat File Destination,OLE DB Destination + wykorzystano transformacje cache
 
 **[SSIS ETL Cache](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab03d_etl_cache.png)**
+
+
+---------------------------------------------------------------------------------------------------------
+ 
+Stworzono nowy pakiet  (lab03d_etl.dtsx).
+
+Stworzono przepływ ETL wykorzystano:
+Derived Column,Lookup,Multicast,Split,Flat File Destination,OLE DB Destination - użyto pojedyńczy LOOKUP (zastąpiono 2 inne lookup)
+
+**[SSIS ETL LookUp](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab03d_etl_one_lookup.png)**
