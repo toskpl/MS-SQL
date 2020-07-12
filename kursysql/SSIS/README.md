@@ -66,3 +66,12 @@ Stworzono przepływ ETL wykorzystano:
 Derived Column,Lookup,Multicast,Split,Flat File Destination,OLE DB Destination - użyto pojedyńczy LOOKUP (zastąpiono 2 inne lookup)
 
 **[SSIS ETL LookUp](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab03d_etl_one_lookup.png)**
+
+---------------------------------------------------------------------------------------------------------
+ 
+Stworzono nowy pakiet  (lab03e_debug.dtsx).
+
+Stworzono przepływ ETL wykorzystano:
+Derived Column,Lookup,Multicast,Split,Flat File Destination,OLE DB Destination + obsługa błedów przekirowanie błędów do tabeli [ErrorDRVProfit] i debugowanie
+
+**[SSIS ETL Debug](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab03e_debug.png)**
