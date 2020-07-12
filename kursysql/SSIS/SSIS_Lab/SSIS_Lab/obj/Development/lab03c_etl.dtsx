@@ -12,8 +12,8 @@
   DTS:ObjectName="lab03c_etl"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{ABECD050-35C0-4951-8834-CC090264FF9F}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{A10AF982-313C-4240-AB78-83FBF8506519}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -487,6 +487,207 @@
                   </externalMetadataColumns>
                 </input>
               </inputs>
+            </component>
+            <component
+              refId="Package\DFT Products\DST_OLE No Subcategory"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="DST_OLE No Subcategory"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Products_noSubcategory]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT Products\DST_OLE No Subcategory.Connections[OleDbConnection]"
+                  connectionManagerID="{D95E9FB7-78A5-4A83-9592-E11C0CCE7112}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[AW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].Columns[ProductID]"
+                      cachedDataType="i4"
+                      cachedName="ProductID"
+                      externalMetadataColumnId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
+                      lineageId="Package\DFT Products\OLE_SRC Products.Outputs[OLE DB Source Output].Columns[ProductID]" />
+                    <inputColumn
+                      refId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].Columns[Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Name"
+                      externalMetadataColumnId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      lineageId="Package\DFT Products\OLE_SRC Products.Outputs[OLE DB Source Output].Columns[Name]" />
+                    <inputColumn
+                      refId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].Columns[ProductNumber]"
+                      cachedDataType="wstr"
+                      cachedLength="25"
+                      cachedName="ProductNumber"
+                      externalMetadataColumnId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].ExternalColumns[ProductNumber]"
+                      lineageId="Package\DFT Products\OLE_SRC Products.Outputs[OLE DB Source Output].Columns[ProductNumber]" />
+                    <inputColumn
+                      refId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].Columns[Color]"
+                      cachedDataType="wstr"
+                      cachedLength="15"
+                      cachedName="Color"
+                      externalMetadataColumnId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].ExternalColumns[Color]"
+                      lineageId="Package\DFT Products\OLE_SRC Products.Outputs[OLE DB Source Output].Columns[Color]" />
+                    <inputColumn
+                      refId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].Columns[Cost]"
+                      cachedDataType="cy"
+                      cachedName="Cost"
+                      externalMetadataColumnId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].ExternalColumns[Cost]"
+                      lineageId="Package\DFT Products\OLE_SRC Products.Outputs[OLE DB Source Output].Columns[Cost]" />
+                    <inputColumn
+                      refId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].Columns[Price]"
+                      cachedDataType="cy"
+                      cachedName="Price"
+                      externalMetadataColumnId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].ExternalColumns[Price]"
+                      lineageId="Package\DFT Products\OLE_SRC Products.Outputs[OLE DB Source Output].Columns[Price]" />
+                    <inputColumn
+                      refId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].Columns[ProductSubcategoryID]"
+                      cachedDataType="i4"
+                      cachedName="ProductSubcategoryID"
+                      externalMetadataColumnId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].ExternalColumns[ProductSubcategoryID]"
+                      lineageId="Package\DFT Products\OLE_SRC Products.Outputs[OLE DB Source Output].Columns[ProductSubcategoryID]" />
+                    <inputColumn
+                      refId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].Columns[Profit]"
+                      cachedDataType="cy"
+                      cachedName="Profit"
+                      externalMetadataColumnId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].ExternalColumns[Profit]"
+                      lineageId="Package\DFT Products\DRV Profit.Outputs[Derived Column Output].Columns[Profit]" />
+                    <inputColumn
+                      refId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].Columns[Color2]"
+                      cachedDataType="wstr"
+                      cachedLength="32"
+                      cachedName="Color2"
+                      externalMetadataColumnId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].ExternalColumns[Color2]"
+                      lineageId="Package\DFT Products\DRV Profit.Outputs[Derived Column Output].Columns[Color2]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
+                      dataType="i4"
+                      name="ProductID" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].ExternalColumns[ProductNumber]"
+                      dataType="wstr"
+                      length="25"
+                      name="ProductNumber" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].ExternalColumns[Color]"
+                      dataType="wstr"
+                      length="15"
+                      name="Color" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].ExternalColumns[Cost]"
+                      dataType="cy"
+                      name="Cost" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].ExternalColumns[Price]"
+                      dataType="cy"
+                      name="Price" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].ExternalColumns[ProductSubcategoryID]"
+                      dataType="i4"
+                      name="ProductSubcategoryID" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].ExternalColumns[Profit]"
+                      dataType="cy"
+                      name="Profit" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input].ExternalColumns[Color2]"
+                      dataType="wstr"
+                      length="32"
+                      name="Color2" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT Products\DST_OLE No Subcategory.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT Products\DST_OLE No Subcategory.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT Products\DST_OLE No Subcategory.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT Products\DST_OLE No Subcategory.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT Products\DST_OLE No Subcategory.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
             </component>
             <component
               refId="Package\DFT Products\LKP Categories"
@@ -1770,6 +1971,11 @@ where [refTable].[ProductSubcategoryID] = ?</property>
               name="Lookup Match Output"
               startId="Package\DFT Products\LKP Categories.Outputs[Lookup Match Output]" />
             <path
+              refId="Package\DFT Products.Paths[Lookup No Match Output]"
+              endId="Package\DFT Products\DST_OLE No Subcategory.Inputs[OLE DB Destination Input]"
+              name="Lookup No Match Output"
+              startId="Package\DFT Products\LKP Subcategories.Outputs[Lookup No Match Output]" />
+            <path
               refId="Package\DFT Products.Paths[Multicast Output 1]"
               endId="Package\DFT Products\DST_FLAT Products.Inputs[Flat File Destination Input]"
               name="Multicast Output 1"
@@ -1885,12 +2091,40 @@ where [refTable].[ProductSubcategoryID] = ?</property>
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="167,42"
+          Id="Package\DFT Products\OLE_DST NotBikes"
+          TopLeft="973,714" />
+        <NodeLayout
+          Size="120,42"
+          Id="Package\DFT Products\Multicast"
+          TopLeft="495,542" />
+        <NodeLayout
+          Size="166,42"
+          Id="Package\DFT Products\LKP Subcategories"
+          TopLeft="549,367" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\DFT Products\OLE_DST Bikes"
+          TopLeft="643,709" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\DFT Products\DST_FLAT Products"
+          TopLeft="188,541" />
+        <NodeLayout
+          Size="167,42"
           Id="Package\DFT Products\OLE_SRC Products"
           TopLeft="283,123" />
         <NodeLayout
           Size="127,42"
           Id="Package\DFT Products\DRV Profit"
           TopLeft="414,263" />
+        <NodeLayout
+          Size="149,42"
+          Id="Package\DFT Products\LKP Categories"
+          TopLeft="784,461" />
+        <NodeLayout
+          Size="134,42"
+          Id="Package\DFT Products\SPLIT Bikes"
+          TopLeft="844,548" />
         <EdgeLayout
           Id="Package\DFT Products.Paths[OLE DB Source Output]"
           TopLeft="366.5,165">
@@ -1925,36 +2159,56 @@ where [refTable].[ProductSubcategoryID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="166,42"
-          Id="Package\DFT Products\LKP Subcategories"
-          TopLeft="549,367" />
         <EdgeLayout
-          Id="Package\DFT Products.Paths[Derived Column Output]"
-          TopLeft="477.5,305">
+          Id="Package\DFT Products.Paths[NotBikes]"
+          TopLeft="932,590">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="154.5,62"
+              EndConnector="124.5,124"
               Start="0,0"
-              End="154.5,54.5">
+              End="124.5,116.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,27" />
+                    End="0,46.4778761061947" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,27"
-                    Point2="0,31"
-                    Point3="4,31" />
+                    Point1="0,46.4778761061947"
+                    Point2="0,50.4778761061947"
+                    Point3="4,50.4778761061947" />
                   <mssgle:LineSegment
-                    End="150.5,31" />
+                    End="120.5,50.4778761061947" />
                   <mssgle:CubicBezierSegment
-                    Point1="150.5,31"
-                    Point2="154.5,31"
-                    Point3="154.5,35" />
+                    Point1="120.5,50.4778761061947"
+                    Point2="124.5,50.4778761061947"
+                    Point3="124.5,54.4778761061947" />
                   <mssgle:LineSegment
-                    End="154.5,54.5" />
+                    End="124.5,116.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="42.552421875,55.4778761061947,39.39515625,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT Products.Paths[Multicast Output 2]"
+          TopLeft="615,566">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="229,0"
+              Start="0,0"
+              End="221.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="221.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1963,50 +2217,28 @@ where [refTable].[ProductSubcategoryID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="149,42"
-          Id="Package\DFT Products\LKP Categories"
-          TopLeft="784,461" />
         <EdgeLayout
-          Id="Package\DFT Products.Paths[Lookup Match Output]"
-          TopLeft="632,409">
+          Id="Package\DFT Products.Paths[Multicast Output 1]"
+          TopLeft="495,562.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="226.5,52"
+              EndConnector="-135,0"
               Start="0,0"
-              End="226.5,44.5">
+              End="-127.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22"
-                    Point2="0,26"
-                    Point3="4,26" />
-                  <mssgle:LineSegment
-                    End="222.5,26" />
-                  <mssgle:CubicBezierSegment
-                    Point1="222.5,26"
-                    Point2="226.5,26"
-                    Point3="226.5,30" />
-                  <mssgle:LineSegment
-                    End="226.5,44.5" />
+                    End="-127.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="65.05861328125,31,96.3827734375,11.609375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="120,42"
-          Id="Package\DFT Products\Multicast"
-          TopLeft="495,542" />
         <EdgeLayout
           Id="Package\DFT Products.Paths[Lookup Match Output1]"
           TopLeft="858.5,503">
@@ -2043,24 +2275,68 @@ where [refTable].[ProductSubcategoryID] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="172,42"
-          Id="Package\DFT Products\DST_FLAT Products"
-          TopLeft="188,541" />
         <EdgeLayout
-          Id="Package\DFT Products.Paths[Multicast Output 1]"
-          TopLeft="495,562.5">
+          Id="Package\DFT Products.Paths[Lookup Match Output]"
+          TopLeft="632,409">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-135,0"
+              EndConnector="226.5,52"
               Start="0,0"
-              End="-127.5,0">
+              End="226.5,44.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-127.5,0" />
+                    End="0,22" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22"
+                    Point2="0,26"
+                    Point3="4,26" />
+                  <mssgle:LineSegment
+                    End="222.5,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="222.5,26"
+                    Point2="226.5,26"
+                    Point3="226.5,30" />
+                  <mssgle:LineSegment
+                    End="226.5,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="65.05861328125,31,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT Products.Paths[Derived Column Output]"
+          TopLeft="477.5,305">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="154.5,62"
+              Start="0,0"
+              End="154.5,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27"
+                    Point2="0,31"
+                    Point3="4,31" />
+                  <mssgle:LineSegment
+                    End="150.5,31" />
+                  <mssgle:CubicBezierSegment
+                    Point1="150.5,31"
+                    Point2="154.5,31"
+                    Point3="154.5,35" />
+                  <mssgle:LineSegment
+                    End="154.5,54.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2069,40 +2345,6 @@ where [refTable].[ProductSubcategoryID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="134,42"
-          Id="Package\DFT Products\SPLIT Bikes"
-          TopLeft="844,548" />
-        <EdgeLayout
-          Id="Package\DFT Products.Paths[Multicast Output 2]"
-          TopLeft="615,566">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="229,0"
-              Start="0,0"
-              End="221.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="221.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="151,42"
-          Id="Package\DFT Products\OLE_DST Bikes"
-          TopLeft="643,709" />
-        <NodeLayout
-          Size="167,42"
-          Id="Package\DFT Products\OLE_DST NotBikes"
-          TopLeft="973,714" />
         <EdgeLayout
           Id="Package\DFT Products.Paths[Bikes]"
           TopLeft="890,590">
@@ -2139,39 +2381,43 @@ where [refTable].[ProductSubcategoryID] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="201,42"
+          Id="Package\DFT Products\DST_OLE No Subcategory"
+          TopLeft="894,335" />
         <EdgeLayout
-          Id="Package\DFT Products.Paths[NotBikes]"
-          TopLeft="932,590">
+          Id="Package\DFT Products.Paths[Lookup No Match Output]"
+          TopLeft="715,388">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="124.5,124"
+              EndConnector="179,-32"
               Start="0,0"
-              End="124.5,116.5">
+              End="171.5,-32">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,46.4778761061947" />
+                    End="85.5,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,46.4778761061947"
-                    Point2="0,50.4778761061947"
-                    Point3="4,50.4778761061947" />
+                    Point1="85.5,0"
+                    Point2="89.5,0"
+                    Point3="89.5,-4" />
                   <mssgle:LineSegment
-                    End="120.5,50.4778761061947" />
+                    End="89.5,-28" />
                   <mssgle:CubicBezierSegment
-                    Point1="120.5,50.4778761061947"
-                    Point2="124.5,50.4778761061947"
-                    Point3="124.5,54.4778761061947" />
+                    Point1="89.5,-28"
+                    Point2="89.5,-32"
+                    Point3="93.5,-32" />
                   <mssgle:LineSegment
-                    End="124.5,116.5" />
+                    End="171.5,-32" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="42.552421875,55.4778761061947,39.39515625,9.7490234375"
+              BoundingBox="33.69361328125,1,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -2260,6 +2506,19 @@ where [refTable].[ProductSubcategoryID] = ?</property>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT Products\DST_OLE No Subcategory">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
