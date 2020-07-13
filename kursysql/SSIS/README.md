@@ -56,6 +56,12 @@ Stworzono nowy pakiet  (lab03d_etl_cache.dtsx).
 Stworzono przepływ ETL wykorzystano:
 Derived Column,Lookup,Multicast,Split,Flat File Destination,OLE DB Destination + wykorzystano transformacje cache
 
+|Typ | Jak działa |
+| ------------- |:-------------:|
+Full cache | cała tabela ładowana do pamieci| 
+Partial cache | czesc tabeli jest w cache, jeśli nie ma w cache danych to siega do bazy danych i doczytuje brakujace dane| 
+No cache | zawsze siega do bazy danych, nie ma danych w cache| 
+
 **[SSIS ETL Cache](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab03d_etl_cache.png)**
 
 
