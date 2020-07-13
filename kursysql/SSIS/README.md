@@ -17,6 +17,7 @@ SSIS_Lab
 
  Zaimportowano pakiet (lab02c_wizard.dtsx) w SSIS.
  
+ **[SSIS import from wizard](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab02c_wizard.png)**
 ---------------------------------------------------------------------------------------------------------
  
 Stworzono nowy pakiet  (lab02d_introduction.dtsx).
@@ -75,3 +76,12 @@ Stworzono przepływ ETL wykorzystano:
 Derived Column,Lookup,Multicast,Split,Flat File Destination,OLE DB Destination + obsługa błedów przekirowanie błędów do tabeli [ErrorDRVProfit] i debugowanie
 
 **[SSIS ETL Debug](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab03e_debug.png)**
+
+---------------------------------------------------------------------------------------------------------
+ 
+Stworzono nowy pakiet  (lab04b_controlflow.dtsx).
+
+Stworzono przepływ ETL wykorzystano:
+Flat File Source odczyt pojedyńczego pliku i załadowanie danych do tabeli [Countries]
+
+**[SSIS ETL Flat File Source](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab04b_controlflow.png)**
