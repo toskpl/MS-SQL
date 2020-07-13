@@ -11,7 +11,7 @@
         <UserIDs />
         <UserPasswords />
         <OfflineMode>false</OfflineMode>
-        <ProgressReporting>true</ProgressReporting>
+        <ProgressReporting>false</ProgressReporting>
         <ParameterConfigurationSensitiveValues>
           <ConfigurationSetting>
             <Id>LastModifiedTime</Id>

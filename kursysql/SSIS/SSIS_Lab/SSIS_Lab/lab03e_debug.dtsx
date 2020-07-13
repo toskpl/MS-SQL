@@ -12,8 +12,8 @@
   DTS:ObjectName="lab03e_debug"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="18"
-  DTS:VersionGUID="{29FAA395-7415-4A90-9B43-A6FA529C0D6A}">
+  DTS:VersionBuild="19"
+  DTS:VersionGUID="{963EB8BE-7287-43DF-8478-50D524F7FB6B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
