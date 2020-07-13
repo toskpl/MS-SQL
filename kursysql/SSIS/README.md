@@ -18,6 +18,7 @@ SSIS_Lab
  Zaimportowano pakiet (lab02c_wizard.dtsx) w SSIS.
  
  **[SSIS import from wizard](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab02c_wizard.png)**
+ 
 ---------------------------------------------------------------------------------------------------------
  
 Stworzono nowy pakiet  (lab02d_introduction.dtsx).
