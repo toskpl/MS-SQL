@@ -92,3 +92,12 @@ Stworzono przepływ ETL wykorzystano:
 Flat File Source odczyt pojedyńczego pliku i załadowanie danych do tabeli [Countries]
 
 **[SSIS ETL Flat File Source](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab04b_controlflow.png)**
+
+---------------------------------------------------------------------------------------------------------
+ 
+Stworzono nowy pakiet  (lab04b_controlflow_file_system_task.dtsx).
+
+Stworzono przepływ ETL wykorzystano:
+File System Task odczyt pojedyńczego pliku i załadowanie danych do tabeli [Countries]
+
+**[SSIS ETL File System Task]**
