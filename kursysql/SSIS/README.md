@@ -111,3 +111,14 @@ Stworzono przepływ ETL wykorzystano:
 File System Task skopiowanie z katalogu źródłowego do katalogu docelowego wszystkich plików .txt i załadowanie danych do tabeli [Countries], usunięcie pliku w katalogu docelowym
 
 **[SSIS ETL For Loop](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab04b_controlflow_for_loop.png)**
+
+---------------------------------------------------------------------------------------------------------
+ 
+Stworzono nowy pakiet  (lab04c_breakpoint.dtsx).
+
+Stworzono przepływ ETL wykorzystano:
+2 pętle For Loop i For Foreach Loop Container.
+File System Task skopiowanie z katalogu źródłowego do katalogu docelowego wszystkich plików .txt i załadowanie danych do tabeli [Countries], usunięcie pliku w katalogu docelowym
+Dane źródłowe błędne przez co proces ETL kończy się błędem - breakpoint do analizy błędu.
+
+**[SSIS ETL Breakpoint](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab04c_breakpoints.png)**
