@@ -101,3 +101,13 @@ Stworzono przepływ ETL wykorzystano:
 File System Task skopiowanie z katalogu źródłowego do katalogu docelowego pojedyńczego pliku .txt i załadowanie danych do tabeli [Countries], usunięcie pliku w katalogu docelowym
 
 **[SSIS ETL File System Task](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab04b_controlflow_file_system_task.png)**
+
+---------------------------------------------------------------------------------------------------------
+ 
+Stworzono nowy pakiet  (lab04b_controlflow_for_loop.dtsx).
+
+Stworzono przepływ ETL wykorzystano:
+2 pętle For Loop i For Foreach Loop Container.
+File System Task skopiowanie z katalogu źródłowego do katalogu docelowego wszystkich plików .txt i załadowanie danych do tabeli [Countries], usunięcie pliku w katalogu docelowym
+
+**[SSIS ETL For Loop](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab04b_controlflow_for_loop.png)**
