@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>SSIS_Lab</Name>
-    <LastWriteTime>2020-07-13T08:25:04.3091426Z</LastWriteTime>
+    <LastWriteTime>2020-07-14T22:25:40.0192769Z</LastWriteTime>
     <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -42,8 +42,18 @@
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>lb04b_controlflow.dtsx</Name>
-      <LastWriteTime>2020-07-13T08:27:58.8636359Z</LastWriteTime>
+      <Name>lab04b_controlflow.dtsx</Name>
+      <LastWriteTime>2020-07-14T21:37:27.649843Z</LastWriteTime>
+      <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>lab04b_controlflow_file_system_task.dtsx</Name>
+      <LastWriteTime>2020-07-14T22:04:50.9255346Z</LastWriteTime>
+      <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>lab04b_controlflow_for_loop.dtsx</Name>
+      <LastWriteTime>2020-07-14T23:01:00.6858914Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
