@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>SSIS_Lab</Name>
-    <LastWriteTime>2020-07-14T22:25:40.0192769Z</LastWriteTime>
+    <LastWriteTime>2020-07-15T07:56:17.716817Z</LastWriteTime>
     <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -54,6 +54,11 @@
     <ProjectBuildItemInfo>
       <Name>lab04b_controlflow_for_loop.dtsx</Name>
       <LastWriteTime>2020-07-14T23:01:00.6858914Z</LastWriteTime>
+      <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>lab04c_breakpoint.dtsx</Name>
+      <LastWriteTime>2020-07-15T08:27:49.5617513Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
