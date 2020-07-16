@@ -12,8 +12,8 @@
   DTS:ObjectName="lab04c_breakpoint"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="52"
-  DTS:VersionGUID="{2020A3F9-9CC1-47F0-82D9-499C59000203}">
+  DTS:VersionBuild="55"
+  DTS:VersionGUID="{D6E28B3C-3A42-4215-9CF7-579021B28525}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1105,40 +1105,40 @@
         <NodeLayout
           Size="120,42"
           Id="Package\Foreach Loop Container\DFT Load Products\Multicast"
-          TopLeft="723,386" />
+          TopLeft="729,375" />
         <EdgeLayout
           Id="Package\Foreach Loop Container\DFT Load Products.Paths[OLE DB Destination Error Output]"
           TopLeft="599,324">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="184,62"
+              EndConnector="190,51"
               Start="0,0"
-              End="184,54.5">
+              End="190,43.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,27" />
+                    End="0,21.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,27"
-                    Point2="0,31"
-                    Point3="4,31" />
+                    Point1="0,21.5"
+                    Point2="0,25.5"
+                    Point3="4,25.5" />
                   <mssgle:LineSegment
-                    End="180,31" />
+                    End="186,25.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="180,31"
-                    Point2="184,31"
-                    Point3="184,35" />
+                    Point1="186,25.5"
+                    Point2="190,25.5"
+                    Point3="190,29.5" />
                   <mssgle:LineSegment
-                    End="184,54.5" />
+                    End="190,43.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="10.1299609375,36,163.740078125,16"
+              BoundingBox="13.1299609375,30.5,163.740078125,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
