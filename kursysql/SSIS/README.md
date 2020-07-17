@@ -122,3 +122,11 @@ File System Task skopiowanie z katalogu źródłowego do katalogu docelowego wsz
 Dane źródłowe błędne przez co proces ETL kończy się błędem - breakpoint do analizy błędu.
 
 **[SSIS ETL Breakpoint](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab04c_breakpoints.png)**
+
+---------------------------------------------------------------------------------------------------------
+ 
+Stworzono nowy pakiet  (lab05b_SQLTask.dtsx).
+
+Stworzono przepływ ETL wykorzystano:
+
+**[SSIS ETL SQLTask](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab05b_SQLTask.png)**
