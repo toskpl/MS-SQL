@@ -41,6 +41,7 @@
           <SSIS:Package SSIS:Name="lab04b_controlflow_for_loop.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="lab04c_breakpoint.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="lab05b_SQLTask.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="lab05c_bluk.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="AW.conmgr" />
@@ -2655,10 +2656,10 @@
                 <SSIS:Property SSIS:Name="Name">lab05b_SQLTask</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">7</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{9C0137B3-8946-47CF-AF5E-9CFBED0236D7}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{412116E8-ABA2-4F9E-A7A5-F5671732B04B}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -2676,6 +2677,38 @@
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Value">Components</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+              </SSIS:Parameters>
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="lab05c_bluk.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{976E2B95-C276-4C57-A349-FA568B8F3795}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">lab05c_bluk</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">11</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{8F30E615-79C3-4EAB-B90C-1C3C71F69E57}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">0</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters>
+                <SSIS:Parameter SSIS:Name="FileSource">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{851448F4-5446-4D47-B602-19AF78D299AC}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\_TOSKPL\kursSQL\SSIS\SSIS_Lab\Pliki\bcp_out\</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>

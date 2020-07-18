@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>SSIS_Lab</Name>
-    <LastWriteTime>2020-07-16T10:36:59.7741477Z</LastWriteTime>
+    <LastWriteTime>2020-07-17T22:56:48.4543493Z</LastWriteTime>
     <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -64,6 +64,11 @@
     <ProjectBuildItemInfo>
       <Name>lab05b_SQLTask.dtsx</Name>
       <LastWriteTime>2020-07-16T10:37:45.9284458Z</LastWriteTime>
+      <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>lab05c_bluk.dtsx</Name>
+      <LastWriteTime>2020-07-17T23:24:12.5761117Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
