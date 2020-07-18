@@ -128,5 +128,7 @@ Dane źródłowe błędne przez co proces ETL kończy się błędem - breakpoint
 Stworzono nowy pakiet  (lab05b_SQLTask.dtsx).
 
 Stworzono przepływ ETL wykorzystano:
+Execute SQL
+Foreach Loop Container: - Execute Process Task, Execute SQL, Bulk Insert Task,File System Task + zmienne pakietowe + parametr projektu
 
 **[SSIS ETL SQLTask](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab05b_SQLTask.png)**
