@@ -141,4 +141,4 @@ Stworzono przepływ ETL wykorzystano:
 Execute SQL Task
 Foreach Loop Container: - Execute Process Task,Execute SQL Task,Bulk Insert Task,File System Task + zmienne pakietowe + parametr projektu
 
-**[SSIS ETL Bulk]()**
+**[SSIS ETL Bulk](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab05c_bulk.png)**
