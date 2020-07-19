@@ -132,3 +132,13 @@ Execute SQL
 Foreach Loop Container: - Execute Process Task, Execute SQL, Bulk Insert Task,File System Task + zmienne pakietowe + parametr projektu
 
 **[SSIS ETL SQLTask](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab05b_SQLTask.png)**
+
+---------------------------------------------------------------------------------------------------------
+ 
+Stworzono nowy pakiet  (lab05c_bulk.dtsx).
+
+Stworzono przepływ ETL wykorzystano:
+Execute SQL Task
+Foreach Loop Container: - Execute Process Task,Execute SQL Task,Bulk Insert Task,File System Task + zmienne pakietowe + parametr projektu
+
+**[SSIS ETL Bulk]()**
