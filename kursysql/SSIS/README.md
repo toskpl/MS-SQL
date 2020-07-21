@@ -151,3 +151,12 @@ Stworzono przepływ ETL wykorzystano:
 Rebuild Index Task,Update Statistics Task,Back Up Database Task,Maintenance Cleanup Task
 
 **[SSIS ETL Maintenence](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab05d_mantenance.png)**
+
+---------------------------------------------------------------------------------------------------------
+ 
+Stworzono nowy pakiet  (lab6c_fuzzylookup).
+
+Stworzono przepływ ETL wykorzystano:
+OLE DB Source,Lookup, Fuzzy Lookup, Multicast
+
+**[SSIS ETL Fuzzy Lookup](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab06b_fuzzyloop.png)**
