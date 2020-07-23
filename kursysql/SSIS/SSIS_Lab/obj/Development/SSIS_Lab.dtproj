@@ -41,9 +41,12 @@
           <SSIS:Package SSIS:Name="lab04b_controlflow_for_loop.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="lab04c_breakpoint.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="lab05b_SQLTask.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="lab5d_maintenence.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="lab05c_bulk.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="lab06b_fuzzy_loop.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="lab06c_merge.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="lab05d_maintenence.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="lab06d_unionall.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="lab06e_merge.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="AW.conmgr" />
@@ -2676,16 +2679,97 @@
                 </SSIS:Parameter>
               </SSIS:Parameters>
             </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="lab5d_maintenence.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="lab05c_bulk.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{04B9D741-1324-4850-9170-9C86A531C115}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">lab5d_maintenence</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{A9C9AB7C-E215-4531-8FC9-858293BBDA6B}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">lab05c_bulk</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">5</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">24</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{C6FC299E-677E-4727-8DF9-4603C6E72801}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{7A7AE55B-C36F-48A1-B2D8-207C70AB49EA}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">0</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters>
+                <SSIS:Parameter SSIS:Name="FileSource">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{851448F4-5446-4D47-B602-19AF78D299AC}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\_TOSKPL\kursSQL\SSIS\SSIS_Lab\Pliki\bcp_out\</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+              </SSIS:Parameters>
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="lab06b_fuzzy_loop.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{D50B96DF-BE7A-4BEF-BF53-E05D9F481AB3}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">lab06b_fuzzy_loop</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">12</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{D26A4038-2D50-4987-BE05-6F2EBC5641A3}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">0</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="lab06c_merge.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{19568AA5-08B1-40B6-8CDD-71AC31CA776F}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">lab06c_merge</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">13</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{2BFAC7D4-A185-4B2F-AA29-BDF05A001470}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">0</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters>
+                <SSIS:Parameter SSIS:Name="Gander">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{E6304B55-D123-4C45-A0A6-68EFF6341E62}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">F</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+              </SSIS:Parameters>
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="lab05d_maintenence.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{3721C505-5B39-40DD-8EB7-0041E7D62084}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">lab05d_maintenence</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">6</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{90256C69-6CDD-4497-9274-F55C57E553F1}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -2796,48 +2880,33 @@
                 </SSIS:Parameter>
               </SSIS:Parameters>
             </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="lab05c_bulk.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="lab06d_unionall.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{A9C9AB7C-E215-4531-8FC9-858293BBDA6B}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">lab05c_bulk</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{6946265F-4A64-43C9-B7D6-5B4646962B0B}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">lab06d_unionall</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">24</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">10</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{7A7AE55B-C36F-48A1-B2D8-207C70AB49EA}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{50A3A8C2-C53C-434E-92AA-854FE534B568}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">0</SSIS:Property>
               </SSIS:Properties>
-              <SSIS:Parameters>
-                <SSIS:Parameter SSIS:Name="FileSource">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">{851448F4-5446-4D47-B602-19AF78D299AC}</SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\_TOSKPL\kursSQL\SSIS\SSIS_Lab\Pliki\bcp_out\</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-              </SSIS:Parameters>
+              <SSIS:Parameters />
             </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="lab06b_fuzzy_loop.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="lab06e_merge.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{D50B96DF-BE7A-4BEF-BF53-E05D9F481AB3}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">lab06b_fuzzy_loop</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{A738C478-D2E5-49A5-94CA-CCD830FD228D}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">lab06e_merge</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">6</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">14</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{6023E02F-EFA7-4C0D-8AE2-539D98B11EAC}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{230D5898-C686-4AD5-862B-238E907D3C0A}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>

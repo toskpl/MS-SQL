@@ -12,8 +12,8 @@
   DTS:ObjectName="lab06b_fuzzy_loop"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{83171BBA-FE07-4AAA-B4AE-F5FF3A46D53B}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{D26A4038-2D50-4987-BE05-6F2EBC5641A3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -2809,7 +2809,7 @@ where [refTable].[Name] = ? and [refTable].[StandardCost] = ? and [refTable].[Li
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\SRC AW Products">
+    design-time-name="Package\Data Flow Task\Fuzzy Lookup">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -2827,7 +2827,7 @@ where [refTable].[Name] = ? and [refTable].[StandardCost] = ? and [refTable].[Li
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -2837,7 +2837,7 @@ where [refTable].[Name] = ? and [refTable].[StandardCost] = ? and [refTable].[Li
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -2845,7 +2845,7 @@ where [refTable].[Name] = ? and [refTable].[StandardCost] = ? and [refTable].[Li
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Fuzzy Lookup">
+    design-time-name="Package\Data Flow Task\SRC AW Products">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

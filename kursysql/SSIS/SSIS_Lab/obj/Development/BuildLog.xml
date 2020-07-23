@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>SSIS_Lab</Name>
-    <LastWriteTime>2020-07-20T11:57:33.5662955Z</LastWriteTime>
+    <LastWriteTime>2020-07-23T12:49:21.8069438Z</LastWriteTime>
     <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -67,18 +67,33 @@
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>lab5d_maintenence.dtsx</Name>
-      <LastWriteTime>2020-07-19T21:27:59.2476815Z</LastWriteTime>
-      <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
       <Name>lab05c_bulk.dtsx</Name>
       <LastWriteTime>2020-07-19T21:58:09.9863871Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>lab06b_fuzzy_loop.dtsx</Name>
-      <LastWriteTime>2020-07-20T12:34:31.7306757Z</LastWriteTime>
+      <LastWriteTime>2020-07-21T12:46:48.8838108Z</LastWriteTime>
+      <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>lab06c_merge.dtsx</Name>
+      <LastWriteTime>2020-07-21T12:48:45.2476933Z</LastWriteTime>
+      <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>lab05d_maintenence.dtsx</Name>
+      <LastWriteTime>2020-07-21T12:25:42.4491121Z</LastWriteTime>
+      <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>lab06d_unionall.dtsx</Name>
+      <LastWriteTime>2020-07-22T07:13:49.7338749Z</LastWriteTime>
+      <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>lab06e_merge.dtsx</Name>
+      <LastWriteTime>2020-07-23T12:49:21.7630237Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
