@@ -154,9 +154,19 @@ Rebuild Index Task,Update Statistics Task,Back Up Database Task,Maintenance Clea
 
 ---------------------------------------------------------------------------------------------------------
  
-Stworzono nowy pakiet  (lab6c_fuzzylookup).
+Stworzono nowy pakiet  (lab6b_fuzzylookup).
 
 Stworzono przepływ ETL wykorzystano:
 OLE DB Source,Lookup, Fuzzy Lookup, Multicast
 
 **[SSIS ETL Fuzzy Lookup](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab06b_fuzzyloop.png)**
+
+---------------------------------------------------------------------------------------------------------
+ 
+Stworzono nowy pakiet  (lab06c_merge_join).
+
+Stworzono przepływ ETL wykorzystano:
+OLE DB Source,Sort, Merge Join, Multicast
+
+**[SSIS ETL Merge Join](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab06c_merge_join.png)**
+
