@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>SSIS_Lab</Name>
-    <LastWriteTime>2020-07-23T12:49:21.8069438Z</LastWriteTime>
+    <LastWriteTime>2020-07-25T22:39:09.7116566Z</LastWriteTime>
     <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -77,23 +77,28 @@
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>lab06c_merge.dtsx</Name>
-      <LastWriteTime>2020-07-21T12:48:45.2476933Z</LastWriteTime>
-      <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
       <Name>lab05d_maintenence.dtsx</Name>
       <LastWriteTime>2020-07-21T12:25:42.4491121Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>lab06d_unionall.dtsx</Name>
-      <LastWriteTime>2020-07-22T07:13:49.7338749Z</LastWriteTime>
+      <LastWriteTime>2020-07-25T22:24:12.713898Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>lab06e_merge.dtsx</Name>
-      <LastWriteTime>2020-07-23T12:49:21.7630237Z</LastWriteTime>
+      <LastWriteTime>2020-07-23T13:24:46.2956736Z</LastWriteTime>
+      <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>lab06c_merge_join.dtsx</Name>
+      <LastWriteTime>2020-07-23T13:24:46.2380884Z</LastWriteTime>
+      <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>;ab06f_cmd.dtsx</Name>
+      <LastWriteTime>2020-07-25T22:39:50.811174Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

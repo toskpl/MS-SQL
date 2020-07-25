@@ -12,8 +12,8 @@
   DTS:ObjectName="lab06e_merge"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="14"
-  DTS:VersionGUID="{230D5898-C686-4AD5-862B-238E907D3C0A}">
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{54D0C6D2-ED3F-4DDA-94F9-B44A82AEB309}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -702,7 +702,6 @@ ORDER BY p.LastName, p.FirstName</property>
       DTS:refId="Package\ST RowsCnt"
       DTS:CreationName="Microsoft.ScriptTask"
       DTS:Description="Script Task"
-      DTS:Disabled="True"
       DTS:DTSID="{40A34EED-3CCF-42A6-BEB7-8D5B452C02AD}"
       DTS:ExecutableType="Microsoft.ScriptTask"
       DTS:LocaleID="-1"

@@ -47,6 +47,7 @@
           <SSIS:Package SSIS:Name="lab06d_unionall.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="lab06e_merge.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="lab06c_merge_join.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="lab06f_cmd.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="AW.conmgr" />
@@ -2854,10 +2855,10 @@
                 <SSIS:Property SSIS:Name="Name">lab06d_unionall</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">10</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">11</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{50A3A8C2-C53C-434E-92AA-854FE534B568}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{718257BB-9450-4D3D-93E4-C80AB0850338}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -2913,6 +2914,23 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
               </SSIS:Parameters>
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="lab06f_cmd.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{72A32067-0432-4734-9681-5A57A809E3F3}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">lab06f_cmd</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">5</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{DF39A667-CE7A-430B-AF18-AF3807CD3055}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">0</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
             </SSIS:PackageMetaData>
           </SSIS:PackageInfo>
         </SSIS:DeploymentInfo>
