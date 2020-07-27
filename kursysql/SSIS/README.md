@@ -179,3 +179,12 @@ OLE DB Source, UnionAll, Row Count, Scrpit Task Editor + zmienne systemowe + zmi
 
 **[SSIS ETL UnionAll](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab06d_unionall.png)**
 
+---------------------------------------------------------------------------------------------------------
+ 
+Stworzono nowy pakiet  (lab06e_merge).
+
+Stworzono przepływ ETL wykorzystano:
+OLE DB Source, Merge, Row Count, Scrpit Task Editor + zmienne systemowe + zmienna pakietowa
+
+**[SSIS ETL Merge](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab06e_merge.png)**
+
