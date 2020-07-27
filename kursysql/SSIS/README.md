@@ -170,3 +170,12 @@ OLE DB Source,Sort, Merge Join, Multicast
 
 **[SSIS ETL Merge Join](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab06c_merge_join.png)**
 
+---------------------------------------------------------------------------------------------------------
+ 
+Stworzono nowy pakiet  (lab06d_unionall).
+
+Stworzono przepływ ETL wykorzystano:
+OLE DB Source, UnionAll, Row Count, Scrpit Task Editor + zmienne systemowe + zmienna pakietowa
+
+**[SSIS ETL UnionAll](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab06d_unionall.png)**
+
