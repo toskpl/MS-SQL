@@ -202,7 +202,7 @@ OLE DB Source, LookUp, Derived Column, UnionAll, OLE DB Command
 Stworzono nowy pakiet  (lab06g_export_column).
 
 Stworzono przepływ ETL wykorzystano:
-Execute SQL Task, Foreach Loop Container, File System Task,Data Flow Task( OLE DB Source, Derived Column, Export Column)
+Execute SQL Task, Foreach Loop Container, File System Task,Data Flow Task( OLE DB Source, Derived Column, Export Column) + zmienne pakietowe + parametr pakietowy
 
 **[SSIS ETL Export Column](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab06g_export_column.png)**
 
