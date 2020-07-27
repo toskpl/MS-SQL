@@ -188,3 +188,12 @@ OLE DB Source, Merge, Row Count, Scrpit Task Editor + zmienne systemowe + zmienn
 
 **[SSIS ETL Merge](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab06e_merge.png)**
 
+---------------------------------------------------------------------------------------------------------
+ 
+Stworzono nowy pakiet  (lab06f_cmd).
+
+Stworzono przepływ ETL wykorzystano:
+OLE DB Source, LookUp, Derived Column, UnionAll, OLE DB Command
+
+**[SSIS ETL CMD](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab06f_cmd.png)**
+
