@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>SSIS_Lab</Name>
-    <LastWriteTime>2020-07-25T22:58:18.42217Z</LastWriteTime>
+    <LastWriteTime>2020-07-27T22:18:36.9431314Z</LastWriteTime>
     <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -88,7 +88,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>lab06e_merge.dtsx</Name>
-      <LastWriteTime>2020-07-23T13:24:46.2956736Z</LastWriteTime>
+      <LastWriteTime>2020-07-27T21:19:42.8779246Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -98,12 +98,17 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>lab06f_cmd.dtsx</Name>
-      <LastWriteTime>2020-07-25T22:43:58.3927591Z</LastWriteTime>
+      <LastWriteTime>2020-07-27T21:43:39.3564748Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>Package1.dtsx</Name>
-      <LastWriteTime>2020-07-25T23:15:24.0703343Z</LastWriteTime>
+      <Name>lab06g_export_column.dtsx</Name>
+      <LastWriteTime>2020-07-27T22:03:07.2188027Z</LastWriteTime>
+      <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>lab07b_script_component.dtsx</Name>
+      <LastWriteTime>2020-07-28T21:40:44.1356866Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

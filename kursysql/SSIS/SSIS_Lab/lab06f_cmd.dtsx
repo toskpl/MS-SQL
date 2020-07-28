@@ -12,8 +12,8 @@
   DTS:ObjectName="lab06f_cmd"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{DF39A667-CE7A-430B-AF18-AF3807CD3055}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{3F666BF4-9793-4ACA-8DED-CBC0BDE22C9B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -1020,16 +1020,54 @@ WHERE sub.ProductCategoryID = 1</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="201,42"
+          Id="Package\DFT Customer\CMD Command BikeBayer"
+          TopLeft="514,484" />
+        <NodeLayout
+          Size="120,42"
+          Id="Package\DFT Customer\DRV Buy"
+          TopLeft="287,238" />
+        <NodeLayout
           Size="168,42"
           Id="Package\DFT Customer\OLE SRC Customer"
-          TopLeft="222,158" />
+          TopLeft="124,17" />
+        <NodeLayout
+          Size="121,42"
+          Id="Package\DFT Customer\Union All"
+          TopLeft="552,367" />
         <NodeLayout
           Size="146,42"
           Id="Package\DFT Customer\LKP BikeBayer"
-          TopLeft="631,266" />
+          TopLeft="533,125" />
+        <NodeLayout
+          Size="136,42"
+          Id="Package\DFT Customer\DRF NotBuy"
+          TopLeft="794,237" />
+        <EdgeLayout
+          Id="Package\DFT Customer.Paths[Union All Output 1]"
+          TopLeft="613.5,409">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,75"
+              Start="0,0"
+              End="0,67.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,67.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT Customer.Paths[OLE DB Source Output]"
-          TopLeft="306,200">
+          TopLeft="208,59">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1061,17 +1099,9 @@ WHERE sub.ProductCategoryID = 1</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="120,42"
-          Id="Package\DFT Customer\DRV Buy"
-          TopLeft="385,379" />
-        <NodeLayout
-          Size="136,42"
-          Id="Package\DFT Customer\DRF NotBuy"
-          TopLeft="892,378" />
         <EdgeLayout
           Id="Package\DFT Customer.Paths[Lookup No Match Output]"
-          TopLeft="727,308">
+          TopLeft="629,167">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1107,7 +1137,7 @@ WHERE sub.ProductCategoryID = 1</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT Customer.Paths[Lookup Match Output]"
-          TopLeft="681,308">
+          TopLeft="583,167">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1141,47 +1171,9 @@ WHERE sub.ProductCategoryID = 1</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="121,42"
-          Id="Package\DFT Customer\Union All"
-          TopLeft="650,508" />
-        <EdgeLayout
-          Id="Package\DFT Customer.Paths[Derived Column Output]"
-          TopLeft="445,421">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="246.666666666667,87"
-              Start="0,0"
-              End="246.666666666667,79.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,47.5187601957586" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,47.5187601957586"
-                    Point2="0,51.5187601957586"
-                    Point3="4,51.5187601957586" />
-                  <mssgle:LineSegment
-                    End="242.666666666667,51.5187601957586" />
-                  <mssgle:CubicBezierSegment
-                    Point1="242.666666666667,51.5187601957586"
-                    Point2="246.666666666667,51.5187601957586"
-                    Point3="246.666666666667,55.5187601957586" />
-                  <mssgle:LineSegment
-                    End="246.666666666667,79.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT Customer.Paths[Derived Column Output1]"
-          TopLeft="960,420">
+          TopLeft="862,279">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1213,24 +1205,32 @@ WHERE sub.ProductCategoryID = 1</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="201,42"
-          Id="Package\DFT Customer\CMD Command BikeBayer"
-          TopLeft="612,625" />
         <EdgeLayout
-          Id="Package\DFT Customer.Paths[Union All Output 1]"
-          TopLeft="711.5,550">
+          Id="Package\DFT Customer.Paths[Derived Column Output]"
+          TopLeft="347,280">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,75"
+              EndConnector="246.666666666667,87"
               Start="0,0"
-              End="0,67.5">
+              End="246.666666666667,79.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,67.5" />
+                    End="0,47.5187601957586" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,47.5187601957586"
+                    Point2="0,51.5187601957586"
+                    Point3="4,51.5187601957586" />
+                  <mssgle:LineSegment
+                    End="242.666666666667,51.5187601957586" />
+                  <mssgle:CubicBezierSegment
+                    Point1="242.666666666667,51.5187601957586"
+                    Point2="246.666666666667,51.5187601957586"
+                    Point3="246.666666666667,55.5187601957586" />
+                  <mssgle:LineSegment
+                    End="246.666666666667,79.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1261,7 +1261,7 @@ WHERE sub.ProductCategoryID = 1</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -1271,7 +1271,7 @@ WHERE sub.ProductCategoryID = 1</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>

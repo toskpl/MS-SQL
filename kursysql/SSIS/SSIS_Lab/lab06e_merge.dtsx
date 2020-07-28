@@ -12,8 +12,8 @@
   DTS:ObjectName="lab06e_merge"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="16"
-  DTS:VersionGUID="{54D0C6D2-ED3F-4DDA-94F9-B44A82AEB309}">
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{BE108BAD-CE3C-4603-BC63-A553E95AAB26}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -649,12 +649,12 @@ ORDER BY p.LastName, p.FirstName</property>
               name="Merge Output 1"
               startId="Package\DFT Merge\Merge.Outputs[Merge Output 1]" />
             <path
-              refId="Package\DFT Merge.Paths[OLE DB Source Output1]"
+              refId="Package\DFT Merge.Paths[OLE DB Source Output]"
               endId="Package\DFT Merge\Merge.Inputs[Merge Input 2]"
               name="OLE DB Source Output"
               startId="Package\DFT Merge\OLE_SRC Employee.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\DFT Merge.Paths[OLE DB Source Output]"
+              refId="Package\DFT Merge.Paths[OLE DB Source Output1]"
               endId="Package\DFT Merge\Merge.Inputs[Merge Input 1]"
               name="OLE DB Source Output"
               startId="Package\DFT Merge\OLE_SRC Customer.Outputs[OLE DB Source Output]" />
@@ -716,14 +716,35 @@ ORDER BY p.LastName, p.FirstName</property>
           Language="CSharp"
           ReadOnlyVariables="User::RowsCnt">
           <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_f0def306d4bd4af18d257f287b8e08f0")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_f0def306d4bd4af18d257f287b8e08f0")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -1095,35 +1116,14 @@ namespace ST_f0def306d4bd4af18d257f287b8e08f0.Properties {
     }
 }]]></ProjectItem>
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_f0def306d4bd4af18d257f287b8e08f0")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_f0def306d4bd4af18d257f287b8e08f0")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -1338,41 +1338,29 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="131,42"
           Id="Package\DFT Merge"
-          TopLeft="242,107" />
+          TopLeft="87,29" />
         <NodeLayout
           Size="176,42"
           Id="Package\SQL Insert Packages"
-          TopLeft="462,495" />
+          TopLeft="61,411" />
         <NodeLayout
           Size="136,42"
           Id="Package\ST RowsCnt"
-          TopLeft="317,307" />
+          TopLeft="86,220" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="307.5,149">
+          TopLeft="153.25,71">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="77.5,158"
+              EndConnector="0,149"
               Start="0,0"
-              End="77.5,150.5">
+              End="0,141.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,75" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,75"
-                    Point2="0,79"
-                    Point3="4,79" />
-                  <mssgle:LineSegment
-                    End="73.5,79" />
-                  <mssgle:CubicBezierSegment
-                    Point1="73.5,79"
-                    Point2="77.5,79"
-                    Point3="77.5,83" />
-                  <mssgle:LineSegment
-                    End="77.5,150.5" />
+                    End="0,141.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1383,30 +1371,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="385,349">
+          TopLeft="151.5,262">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="165,146"
+              EndConnector="0,149"
               Start="0,0"
-              End="165,138.5">
+              End="0,141.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,69" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,69"
-                    Point2="0,73"
-                    Point3="4,73" />
-                  <mssgle:LineSegment
-                    End="161,73" />
-                  <mssgle:CubicBezierSegment
-                    Point1="161,73"
-                    Point2="165,73"
-                    Point3="165,77" />
-                  <mssgle:LineSegment
-                    End="165,138.5" />
+                    End="0,141.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1440,7 +1416,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Id="Package\DFT Merge\Merge"
           TopLeft="540,314" />
         <EdgeLayout
-          Id="Package\DFT Merge.Paths[OLE DB Source Output]"
+          Id="Package\DFT Merge.Paths[OLE DB Source Output1]"
           TopLeft="353.5,168">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -1474,7 +1450,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DFT Merge.Paths[OLE DB Source Output1]"
+          Id="Package\DFT Merge.Paths[OLE DB Source Output]"
           TopLeft="838,166">
           <EdgeLayout.Curve>
             <mssgle:Curve
