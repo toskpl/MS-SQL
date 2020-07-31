@@ -208,10 +208,19 @@ Execute SQL Task, Foreach Loop Container, File System Task,Data Flow Task( OLE D
 
 ---------------------------------------------------------------------------------------------------------
  
-Stworzono nowy pakiet  (lab07b_script_component).
+Stworzono nowy pakiet  (lab07b_script_component_src).
 
 Stworzono przepływ ETL wykorzystano:
 Script Component, Multicast + skrypt w C#
 
-**[SSIS ETL Script Component](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab07b_script_component.png)**
+**[SSIS ETL Script Component Source](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab07b_script_component.png)**
+
+---------------------------------------------------------------------------------------------------------
+ 
+Stworzono nowy pakiet  (lab07b_script_component_tran).
+
+Stworzono przepływ ETL wykorzystano:
+Script Component, Multicast + skrypt w C#, zmienna pakietowa
+
+**[SSIS ETL Script Component Transformation](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab07b_script_component_tran.png)**
 
