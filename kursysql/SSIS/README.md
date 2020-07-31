@@ -220,7 +220,16 @@ Script Component, Multicast + skrypt w C#
 Stworzono nowy pakiet  (lab07b_script_component_tran).
 
 Stworzono przepływ ETL wykorzystano:
-Script Component, Multicast + skrypt w C#, zmienna pakietowa
+Script Component, Multicast + skrypt w C#
 
 **[SSIS ETL Script Component Transformation](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab07b_script_component_tran.png)**
+
+---------------------------------------------------------------------------------------------------------
+ 
+Stworzono nowy pakiet  (lab07b_script_component_tran_konesans).
+
+Stworzono przepływ ETL wykorzystano:
+Script Component,Regular Expression Transform 2017 (Konesans) , Multicast
+
+**[SSIS ETL Script Component Transformation](https://github.com/toskpl/MS-SQL/blob/master/kursysql/SSIS/MOD1/MOD1_lab07b_script_component_tran_konesans.png)**
 
