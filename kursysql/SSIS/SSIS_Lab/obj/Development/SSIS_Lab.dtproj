@@ -49,7 +49,10 @@
           <SSIS:Package SSIS:Name="lab06c_merge_join.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="lab06f_cmd.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="lab06g_export_column.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="lab07b_script_component.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="lab07b_script_component_desc.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="lab07b_script_component_src.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="lab07b_script_component_tran.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="lab07b_script_component_tran_konesans.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="AW.conmgr" />
@@ -2966,22 +2969,135 @@
                 </SSIS:Parameter>
               </SSIS:Parameters>
             </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="lab07b_script_component.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="lab07b_script_component_desc.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{2D03DF87-57BD-4B44-9F5D-56C9D75A0FF7}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">lab07b_script_component</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{654EFA7B-1B65-4308-A2AE-DB0D1A0415DE}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">lab07b_script_component_desc</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">2</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">30</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{9A6C6772-1409-4D4B-8C8D-86A21996482A}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{6891B2FA-C15D-43E2-A751-3B94DAE989B4}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">0</SSIS:Property>
               </SSIS:Properties>
-              <SSIS:Parameters />
+              <SSIS:Parameters>
+                <SSIS:Parameter SSIS:Name="ConnXML_Country">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{198701B6-9F47-43E0-8EF0-E071AAE35345}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\_TOSKPL\kursSQL\SSIS\SSIS_Lab\Pliki\CountryXML.xml</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+              </SSIS:Parameters>
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="lab07b_script_component_src.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{6F9B1209-C960-4E95-82AE-CECBE60EFA56}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">lab07b_script_component_src</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">24</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{28B9FFA7-EAF5-489E-8801-DE8817330937}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">0</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters>
+                <SSIS:Parameter SSIS:Name="ConnXML_Country">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{5312D8EF-0E7A-4728-BE69-EF36106C1A0A}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\_TOSKPL\kursSQL\SSIS\SSIS_Lab\Pliki\CountryXML.xml</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+              </SSIS:Parameters>
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="lab07b_script_component_tran.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{CAE22F61-AC49-4318-983D-0FDACEA65E6C}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">lab07b_script_component_tran</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">21</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{547EC9C7-8EE6-49B9-BC50-E5F4F549AF88}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">0</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters>
+                <SSIS:Parameter SSIS:Name="CM.CountryXML.xml.ConnectionString">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\_TOSKPL\kursSQL\SSIS\SSIS_Lab\Pliki\CountryXML.xml</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+              </SSIS:Parameters>
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="lab07b_script_component_tran_konesans.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{58985F76-F193-4CC4-A413-7D33218CC0B0}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">lab07b_script_component_tran_konesans</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">25</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{542545AA-A476-4DE1-9253-7B2D56C71D25}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">0</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters>
+                <SSIS:Parameter SSIS:Name="CM.CountryXML.xml.ConnectionString">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\_TOSKPL\kursSQL\SSIS\SSIS_Lab\Pliki\CountryXML.xml</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+              </SSIS:Parameters>
             </SSIS:PackageMetaData>
           </SSIS:PackageInfo>
         </SSIS:DeploymentInfo>
@@ -3010,7 +3126,7 @@
           <ConfigurationSetting>
             <Id>LastModifiedTime</Id>
             <Name>LastModifiedTime</Name>
-            <Value xsi:type="xsd:dateTime">2020-07-01T22:23:55.4720699Z</Value>
+            <Value xsi:type="xsd:dateTime">2020-07-31T20:37:05.4691827Z</Value>
           </ConfigurationSetting>
         </ParameterConfigurationValues>
       </Options>

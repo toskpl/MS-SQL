@@ -36,7 +36,7 @@
         DTS:Name="ConnectionString">@[$Project::folderSrc] +  @[User::fileName]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="C:\_TOSKPL\kursSQL\SSIS\SSIS_Lab\Pliki\CountriesTest\Countries1.txt" />
+          DTS:ConnectionString="C:\_TOSKPL\kursSQL\SSIS\SSIS_Lab\Pliki\CountriesProd\Countries1.txt" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager

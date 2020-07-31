@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>SSIS_Lab</Name>
-    <LastWriteTime>2020-07-27T22:18:36.9431314Z</LastWriteTime>
+    <LastWriteTime>2020-07-31T20:43:46.9490374Z</LastWriteTime>
     <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -107,8 +107,23 @@
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>lab07b_script_component.dtsx</Name>
-      <LastWriteTime>2020-07-28T21:40:44.1356866Z</LastWriteTime>
+      <Name>lab07b_script_component_desc.dtsx</Name>
+      <LastWriteTime>2020-07-31T20:45:02.745162Z</LastWriteTime>
+      <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>lab07b_script_component_src.dtsx</Name>
+      <LastWriteTime>2020-07-31T20:45:02.6467369Z</LastWriteTime>
+      <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>lab07b_script_component_tran.dtsx</Name>
+      <LastWriteTime>2020-07-31T20:30:22.1476147Z</LastWriteTime>
+      <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>lab07b_script_component_tran_konesans.dtsx</Name>
+      <LastWriteTime>2020-07-31T20:29:43.0947342Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

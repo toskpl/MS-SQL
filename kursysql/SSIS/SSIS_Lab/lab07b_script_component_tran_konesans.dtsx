@@ -1,0 +1,505 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/28/2020 12:04:41 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="PPL-POZ-NB0452"
+  DTS:CreatorName="PSI\tskrzypczak"
+  DTS:DTSID="{58985F76-F193-4CC4-A413-7D33218CC0B0}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.121"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="lab07b_script_component_tran_konesans"
+  DTS:PackageType="5"
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="25"
+  DTS:VersionGUID="{542545AA-A476-4DE1-9253-7B2D56C71D25}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CountryXML.xml]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{F3651991-3169-433F-807D-0691D3EC5B15}"
+      DTS:ObjectName="CountryXML.xml">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\_TOSKPL\kursSQL\SSIS\SSIS_Lab\Pliki\CountryXML.xml" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{78B4DCE3-717D-425A-8C8D-AB64E5EBCF14}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="CntInvalidEmail">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DFT Script Component TRAN Konesans"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{D884E3A1-0A45-464C-8367-35AD4A4576E7}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DFT Script Component TRAN Konesans"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DFT Script Component TRAN Konesans\EmailNotValid"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="EmailNotValid">
+              <inputs>
+                <input
+                  refId="Package\DFT Script Component TRAN Konesans\EmailNotValid.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT Script Component TRAN Konesans\EmailNotValid.Outputs[Multicast Output 1]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\DFT Script Component TRAN Konesans\EmailNotValid.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT Script Component TRAN Konesans\EmailValid"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="EmailValid">
+              <inputs>
+                <input
+                  refId="Package\DFT Script Component TRAN Konesans\EmailValid.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT Script Component TRAN Konesans\EmailValid.Outputs[Multicast Output 1]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\DFT Script Component TRAN Konesans\EmailValid.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE EmailAdress"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[EmailAddress]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Connections[OleDbConnection]"
+                  connectionManagerID="{D95E9FB7-78A5-4A83-9592-E11C0CCE7112}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[AW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Output].Columns[EmailAddressID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Output].ExternalColumns[EmailAddressID]"
+                      lineageId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Output].Columns[EmailAddressID]"
+                      name="EmailAddressID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Output].Columns[EmailAddress]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Output].ExternalColumns[EmailAddress]"
+                      length="50"
+                      lineageId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Output].Columns[EmailAddress]"
+                      name="EmailAddress"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Output].ExternalColumns[BusinessEntityID]"
+                      dataType="i4"
+                      name="BusinessEntityID" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Output].ExternalColumns[EmailAddressID]"
+                      dataType="i4"
+                      name="EmailAddressID" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Output].ExternalColumns[EmailAddress]"
+                      dataType="wstr"
+                      length="50"
+                      name="EmailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Output].ExternalColumns[rowguid]"
+                      dataType="guid"
+                      name="rowguid" />
+                    <externalMetadataColumn
+                      refId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Output].ExternalColumns[ModifiedDate]"
+                      dataType="dbTimeStamp"
+                      name="ModifiedDate" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Error Output].Columns[EmailAddressID]"
+                      dataType="i4"
+                      lineageId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Error Output].Columns[EmailAddressID]"
+                      name="EmailAddressID" />
+                    <outputColumn
+                      refId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Error Output].Columns[EmailAddress]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Error Output].Columns[EmailAddress]"
+                      name="EmailAddress" />
+                    <outputColumn
+                      refId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT Script Component TRAN Konesans\Regular Expression Transform 2017"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Regular Expression Transform 2017; Konesans Ltd; Copyright © 2019 Konesans Ltd; http://www.konesans.com"
+              description="Regular Expression Validation Transform for SQL Server Integration Services 2019"
+              name="Regular Expression Transform 2017"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Regular expression comparison options."
+                  name="RegexOptions">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The logical combination test applied when multiple columns are being evaluated to determine the overall result."
+                  name="MultipleColumnLogic"
+                  typeConverter="Konesans.Dts.Pipeline.RegExTransform.RegExTransform+MultipleColumnLogic, Konesans.Dts.Pipeline.RegExTransform, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b2ab4a111192992b">1</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Konesans.RegExTransformation</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\DFT Script Component TRAN Konesans\Regular Expression Transform 2017.Inputs[RegExTransform Input]"
+                  description="This is the data from upstream."
+                  errorRowDisposition="FailComponent"
+                  name="RegExTransform Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT Script Component TRAN Konesans\Regular Expression Transform 2017.Inputs[RegExTransform Input].Columns[EmailAddress]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="EmailAddress"
+                      lineageId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Output].Columns[EmailAddress]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Regular Expression to be performed against this column."
+                          expressionType="Notify"
+                          name="Regular Expression">\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT Script Component TRAN Konesans\Regular Expression Transform 2017.Outputs[Matched Rows Output]"
+                  description="Output of rows that passed a regular expression match."
+                  exclusionGroup="1"
+                  name="Matched Rows Output"
+                  synchronousInputId="Package\DFT Script Component TRAN Konesans\Regular Expression Transform 2017.Inputs[RegExTransform Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT Script Component TRAN Konesans\Regular Expression Transform 2017.Outputs[Non-Matched Rows Output]"
+                  description="Output of rows that failed a regular expression match."
+                  exclusionGroup="1"
+                  name="Non-Matched Rows Output"
+                  synchronousInputId="Package\DFT Script Component TRAN Konesans\Regular Expression Transform 2017.Inputs[RegExTransform Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT Script Component TRAN Konesans\Regular Expression Transform 2017.Outputs[Error Output]"
+                  description="Error output for rows that caused an unexpected error."
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Error Output"
+                  synchronousInputId="Package\DFT Script Component TRAN Konesans\Regular Expression Transform 2017.Inputs[RegExTransform Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT Script Component TRAN Konesans\Regular Expression Transform 2017.Outputs[Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT Script Component TRAN Konesans\Regular Expression Transform 2017.Outputs[Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT Script Component TRAN Konesans\Regular Expression Transform 2017.Outputs[Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT Script Component TRAN Konesans\Regular Expression Transform 2017.Outputs[Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DFT Script Component TRAN Konesans.Paths[Matched Rows Output]"
+              endId="Package\DFT Script Component TRAN Konesans\EmailValid.Inputs[Multicast Input 1]"
+              name="Matched Rows Output"
+              startId="Package\DFT Script Component TRAN Konesans\Regular Expression Transform 2017.Outputs[Matched Rows Output]" />
+            <path
+              refId="Package\DFT Script Component TRAN Konesans.Paths[Non-Matched Rows Output]"
+              endId="Package\DFT Script Component TRAN Konesans\EmailNotValid.Inputs[Multicast Input 1]"
+              name="Non-Matched Rows Output"
+              startId="Package\DFT Script Component TRAN Konesans\Regular Expression Transform 2017.Outputs[Non-Matched Rows Output]" />
+            <path
+              refId="Package\DFT Script Component TRAN Konesans.Paths[OLE DB Source Output]"
+              endId="Package\DFT Script Component TRAN Konesans\Regular Expression Transform 2017.Inputs[RegExTransform Input]"
+              name="OLE DB Source Output"
+              startId="Package\DFT Script Component TRAN Konesans\OLE EmailAdress.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="263,42"
+          Id="Package\DFT Script Component TRAN Konesans"
+          TopLeft="99,92" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\DFT Script Component TRAN Konesans">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="127,42"
+          Id="Package\DFT Script Component TRAN Konesans\EmailValid"
+          TopLeft="111,338" />
+        <NodeLayout
+          Size="247,42"
+          Id="Package\DFT Script Component TRAN Konesans\Regular Expression Transform 2017"
+          TopLeft="306,207" />
+        <NodeLayout
+          Size="144,42"
+          Id="Package\DFT Script Component TRAN Konesans\EmailNotValid"
+          TopLeft="569,342" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\DFT Script Component TRAN Konesans\OLE EmailAdress"
+          TopLeft="70,51" />
+        <EdgeLayout
+          Id="Package\DFT Script Component TRAN Konesans.Paths[OLE DB Source Output]"
+          TopLeft="149,93">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="280.5,114"
+              Start="0,0"
+              End="280.5,106.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,53"
+                    Point2="0,57"
+                    Point3="4,57" />
+                  <mssgle:LineSegment
+                    End="276.5,57" />
+                  <mssgle:CubicBezierSegment
+                    Point1="276.5,57"
+                    Point2="280.5,57"
+                    Point3="280.5,61" />
+                  <mssgle:LineSegment
+                    End="280.5,106.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT Script Component TRAN Konesans.Paths[Non-Matched Rows Output]"
+          TopLeft="469.333333333333,249">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="171.666666666667,93"
+              Start="0,0"
+              End="171.666666666667,85.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.5591311343524" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.5591311343524"
+                    Point2="0,37.5591311343524"
+                    Point3="4,37.5591311343524" />
+                  <mssgle:LineSegment
+                    End="167.666666666667,37.5591311343524" />
+                  <mssgle:CubicBezierSegment
+                    Point1="167.666666666667,37.5591311343524"
+                    Point2="171.666666666667,37.5591311343524"
+                    Point3="171.666666666667,41.5591311343524" />
+                  <mssgle:LineSegment
+                    End="171.666666666667,85.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="16.9266276041668,42.5591311343524,137.813411458333,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT Script Component TRAN Konesans.Paths[Matched Rows Output]"
+          TopLeft="389.666666666667,249">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-215.166666666667,89"
+              Start="0,0"
+              End="-215.166666666667,81.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.9436846339501" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.9436846339501"
+                    Point2="0,35.9436846339501"
+                    Point3="-4,35.9436846339501" />
+                  <mssgle:LineSegment
+                    End="-211.166666666667,35.9436846339501" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-211.166666666667,35.9436846339501"
+                    Point2="-215.166666666667,35.9436846339501"
+                    Point3="-215.166666666667,39.9436846339501" />
+                  <mssgle:LineSegment
+                    End="-215.166666666667,81.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-156.964720052083,40.9436846339501,98.7627734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
