@@ -10,4 +10,4 @@
 
 - Optymalizacja - TODO
 
-- **[SSIS](https://github.com/toskpl/MS-SQL/tree/master/kursysql/SSIS)** IN PROGRESS
+- **[SSIS](https://github.com/toskpl/MS-SQL/tree/master/kursysql/SSIS)** DONE
