@@ -6,7 +6,7 @@
 
 - **[Wydajne zapytania](https://github.com/toskpl/MS-SQL/tree/master/kursysql/Wydajne%20Zapytania)** DONE
 
-- Administracja - TODO
+- Administracja - IN PROGRSS
 
 - Optymalizacja - TODO
 
