@@ -6,8 +6,8 @@
 
 - **[Wydajne zapytania](https://github.com/toskpl/MS-SQL/tree/master/kursysql/Wydajne%20Zapytania)** DONE
 
-- Administracja - IN PROGRESS
+- Administracja - TODO
 
-- Optymalizacja - TODO
+- Optymalizacja - IN PROGRESS
 
 - **[SSIS](https://github.com/toskpl/MS-SQL/tree/master/kursysql/SSIS)** DONE
