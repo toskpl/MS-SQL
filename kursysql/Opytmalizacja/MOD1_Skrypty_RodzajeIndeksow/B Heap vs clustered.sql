@@ -83,7 +83,7 @@ EXEC sp_spaceused 'People'
 -- 658 logical reads
 SELECT * FROM People
 
---rak operarora sortowania - bo index juz ma posortowane dane
+--brak operarora sortowania - bo index juz ma posortowane dane
 SELECT * FROM People ORDER BY ID 
 
 SELECT * FROM People WHERE FirstName = 'Kevin'
