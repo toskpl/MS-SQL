@@ -2,4 +2,4 @@ Indeksy
 
 |PART | TEMAT |
 | ------------- |:-------------:|
-part B | Heap vs sterta| 
+part B | Heap vs clustered| 
