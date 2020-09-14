@@ -4,3 +4,4 @@ Indeksy
 | ------------- |:-------------:|
 part B | Heap vs clustered| 
 part C | Nonclustered| 
+part D |Filtered index|
