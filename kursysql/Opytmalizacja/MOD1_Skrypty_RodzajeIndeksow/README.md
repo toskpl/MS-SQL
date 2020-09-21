@@ -7,3 +7,4 @@ part C | Nonclustered|
 part D |Filtered index|
 part E |Fragmentation|
 part F |Index usage|
+part H |Zadanie|
